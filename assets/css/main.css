@@ -278,7 +278,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     font-size: 24px;
     font-weight: 500;
     color: rgba(var(--color-default-rgb), 1);
@@ -1339,4 +1339,26 @@ section {
 
 .footer .credits a {
   color: var(--color-white);
+}
+
+.moreText {
+  display: none;
+}
+.read-more-btn {
+  padding: px 60px;
+  color: rgb(53, 49, 49);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.text.show-more .moreText {
+  display: inline;
+}
+.text.show-more .dots {
+  display: none;
+}
+
+.item{
+  display: none;
 }
