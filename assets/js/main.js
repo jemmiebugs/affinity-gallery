@@ -172,5 +172,27 @@ document.addEventListener('DOMContentLoaded', () => {
   //   myInput.focus()
   // })
 
+  const readMoreBtn = document.querySelector(".read-more-btn");
+  const text = document.querySelector(".text");
+
+    readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+      if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less";
+      } else {
+      readMoreBtn.innerText = "Read More";
+      }
+  });
+
+  $(function() {
+    $(".item").slice(0, 4).show(); // select the first ten
+    $("#load").click(function(e) { // click event for load more
+      e.preventDefault();
+      $(".item:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
+      if ($(".item:hidden").length == 0) { // check if any hidden divs still exist
+        alert("No more divs"); // alert if there are none left
+      }
+    });
+  });
 });
 
