@@ -168,9 +168,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // const myModal = document.getElementById('myModal')
   // const myInput = document.getElementById('myInput')
   
-  // myModal.addEventListener('shown.bs.modal', () => {
-  //   myInput.focus()
+  //   myModal.addEventListener('shown.bs.modal', () => {
+  //     myInput.focus()
   // })
+
+  // $('#myModal').on('shown.bs.modal', function () {
+  //   $('#myInput').trigger('focus')
+  // });
 
   const readMoreBtn = document.querySelector(".read-more-btn");
   const text = document.querySelector(".text");
@@ -194,5 +198,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // .modal-backdrop classes
+
+  $(".modal-transparent").on('show.bs.modal', function () {
+    setTimeout( function() {
+      $(".modal-backdrop").addClass("modal-backdrop-transparent");
+    }, 0);
+  });
+  $(".modal-transparent").on('hidden.bs.modal', function () {
+    $(".modal-backdrop").addClass("modal-backdrop-transparent");
+  });
+
+  $(".modal-fullscreen").on('show.bs.modal', function () {
+    setTimeout( function() {
+      $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+      }, 0);
+  });
+  $(".modal-fullscreen").on('hidden.bs.modal', function () {
+    $(".modal-backdrop").addClass("modal-backdrop-fullscreen"); 
+  });
+
 });
 

@@ -23,6 +23,10 @@
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Template Main CSS Files -->
   <link href="/assets/css/variables.css" rel="stylesheet">
@@ -87,59 +91,120 @@
 
         <div class="row mb-5">
 
-          <div class="d-md-flex post-entry-2 half flex-shrink-0">
+          <div class="d-md-flex post-entry-1 half flex-shrink-0">
             <a href="#" class="me-4 thumbnail">
-              <img src="/artists/chigozie/artwork/3.jpg" alt="" class="img-fluid" style="background-color: #f2f2f2;">
+              <img src="/artists/kelechi/artwork/1.jpg" alt="" class="img-fluid" style="background-color: #f2f2f2;">
             </a>
-            <div class="ps-md-5 mt-4 mt-md-0">
+            <div class="ps-md-5 mt-4 mt-md-0" >
               <!-- <div class="post-meta mt-4">About us</div> -->
-              <h2 class="mb-4 display-4">Chigozie Obi</h2>
-              <h5 class="mb-4 display-6">Omolara, 2021</h5>
+              <h5 class="mb-4 display-6" style="margin-top: 30%;">Kelechi Chiwendu</h5>
+              <h5 class="mb-4 display-8">Omolara, 2021</h5>
               <!-- <Span>Artwork title, 2023</Span> -->
 
-              <h5>Mixed media (oil, acrylic, charcoal, prints on watercolour paper and text)</h5>
+              <h6 style="margin-bottom: 5%;">Mixed media (oil, acrylic, charcoal, prints on watercolour paper and text)</h6>
               <h5 style="margin-bottom: 10%;">61. x 86.5 cm</h5>
               <!-- <button type="button" class="btn btn-outline-secondary" style="margin-right: 10%;">Enquire</button> -->
               
               <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#Modal">
+<button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal" data-target="#myModal">
     Enquire
   </button>
-  
-  <!-- Modal -->
-  <!-- <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="false">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <script>
-    const myModalAlternative = new bootstrap.Modal('#myModal', options)
-    </script>
-              <button type="button" class="btn">Share</button>
+  <button type="button" class="btn">Share</button>
             </div>
             
           </div>
-
-        
-
         </div>
 
       </div>
     </section>
 
 </section>
+
+<!-- <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg"> -->
+
+    <!-- Modal content-->
+    <!-- <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" tabindex="-0" role="dialog" aria-labelledby="myModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog modal-fullscreen" role="document">
+   <div class="modal-content">
+     <div class="modal-header text-left">
+       <h4 class="modal-title w-100 font-weight-bold" style="color: #f2f2f2;">Enquire</h4>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #f2f2f2;" style="margin-right: 40%;">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body mx-3">
+       <div class="md-form mb-5">
+         <i class="fas fa-user prefix grey-text"></i>
+         <!-- <label data-error="wrong" data-success="right" for="form34" style="color: #f2f2f2;">Your name</label> -->
+         <input type="text" id="form34" class=" validate text-line" placeholder="Your Name" data-error="wrong" data-success="right" for="form34"> 
+       </div>
+
+       <div class="md-form mb-5">
+         <i class="fas fa-envelope prefix grey-text"></i>
+         <!-- <label data-error="wrong" data-success="right" for="form29" style="color: #f2f2f2;">Your email</label> -->
+         <input type="email" id="form29" class=" validate text-line" placeholder="Your Email" data-error="wrong" data-success="right" for="form29">
+        </div>
+
+       <div class="md-form mb-5">
+         <i class="fas fa-tag prefix grey-text"></i>
+         <!-- <label data-error="wrong" data-success="right" for="form32" style="color: #f2f2f2;">Phone Number</label> -->
+         <input type="text" id="form32" class="validate text-line " placeholder="Phone Number" data-error="wrong" data-success="right" for="form32" style="text-transform: #f2f2f2;">
+        </div>
+
+       <div class="md-form">
+         <i class="fas fa-pencil prefix grey-text"></i>
+         <!-- <label data-error="wrong" data-success="right" for="form8" style="color: #f2f2f2;">Message</label> -->
+         <textarea type="text" id="form8" class="md-textarea text-line" placeholder="Message" data-error="wrong" data-success="right" for="form8"></textarea>
+       </div>
+       <div class="row justify-content-start">
+        <div class="col-4">
+          <img src="artwork/1c.jpg" alt="avatar" class="square img-responsive">
+        </div>
+        <div class="col-md-8">
+        <p style="color: white;">Kelechi Chiwendu<br>
+        Omolara, 2021<br>
+        Mixed media (oil, acrylic, charcoal, prints on watercolour paper and text)<br>
+        61. x 86.5 cm</p>
+        </div>
+      </div>
+     <!-- <div class="col-md-6 row">
+      <div class="md-form mb-3 me-4 thumbnail">
+        <img src="artwork/1c.jpg" alt="avatar" class="square img-responsive">
+        <div class="mb-3 me-4 thumbnail">Kelechi Chiwendu<br>
+        Omolara, 2021<br>
+        Mixed media (oil, acrylic, charcoal, prints on watercolour paper and text)<br>
+        61. x 86.5 cm</div>
+      </div>
+    </div> -->
+     <div class="modal-footer d-flex justify-content-center" style="margin-top: 10%;">
+       <button class="btn btn-unique" style="background-color: #f2f2f2;">Send Enquiry</button>
+     </div>
+   </div>
+ </div>
+</div>
+ <script>
+   const myModalAlternative = new bootstrap.Modal('#myModal', options)
+   </script>
 
 </main><!-- End #main -->
 
@@ -197,3 +262,44 @@
 </body>
 
 </html>
+
+
+<div class="enquire-input-wrapper visible">
+  <div id="quick_contact_widget" class="enquiry_form inview_element animate-from-bottom active animate visible" tabindex="-1">
+      <h3>Enquire</h3>
+      <form class="clearwithin">
+          <input id="qcw_field_item" name="item" type="hidden" default-value="" value="%3Cdiv%20class%3D%22image%22%3E%3Cdiv%3E%3Cimg%20alt%3D%22%22%20src%3D%22https%3A%2F%2Fartlogic-res.cloudinary.com%2Fw_150%2Ch_150%2Cc_limit%2Cf_auto%2Cfl_lossy%2Cq_auto%3Agood%2Fartlogicstorage%2Fslg%2Fimages%2Fview%2F71f69dbc3ed8d03bdc194a1ee4b884caj.jpg%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content%22%3E%3Cdiv%20class%3D%22artist%22%3E%3Cstrong%3ESerge%20Attukwei%20Clottey%3C%2Fstrong%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22title%22%3E%3Cem%3ESymbol%20of%20survey%3C%2Fem%3E%2C%202022%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22medium%22%3EPlastics%20and%20copper%20wire%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22dimensions%22%3E223.52%20x%20218.44%20cm%20(88%20x%2086%20in.)%3C%2Fdiv%3E%3C%2Fdiv%3E" class="active">
+          <input id="qcw_field_originating_page" name="originating_page" type="hidden" default-value="" value="/exhibitions/251/works/artworks11802/" class="active">
+          <div class="form_row error_row" role="alert"></div>
+          
+          <div class="form_row">
+              <label for="qcw_field_name">Name *</label>
+              <input aria-label="name" required="" autocomplete="name" id="qcw_field_name" name="name" type="text" default-value="Name *" class="focustrap-focusable focustrap-item focustrap-first" tabindex="0">
+          </div>
+          <div class="form_row">
+              <label for="qcw_field_email">Email *</label>
+              <input aria-label="Email" autocomplete="email" required="" id="qcw_field_email" name="email" type="text" default-value="Email *" class="focustrap-focusable focustrap-item" tabindex="0">
+          </div>
+          <div class="form_row">
+              <label for="qcw_field_phone">Phone</label>
+              <input aria-label="phone" autocomplete="tel" id="qcw_field_phone" name="phone" type="text" default-value="Phone" class="focustrap-focusable focustrap-item" tabindex="0">
+          </div>
+          <div class="form_row enquiry_type_general enquiry_type_sales">
+              <label for="qcw_field_message">Message</label>
+              <textarea aria-label="message" id="qcw_field_message" name="message" default-value="Message" class="focustrap-focusable focustrap-item" tabindex="0"></textarea>
+          </div>
+          <div class="notify_panel_items"><ul><li><div class="image"><div><img alt="" src="https://artlogic-res.cloudinary.com/w_150,h_150,c_limit,f_auto,fl_lossy,q_auto:good/artlogicstorage/slg/images/view/71f69dbc3ed8d03bdc194a1ee4b884caj.jpg"></div></div><div class="content"><div class="artist"><strong>Serge Attukwei Clottey</strong></div>
+<div class="title"><em>Symbol of survey</em>, 2022</div>
+<div class="medium">Plastics and copper wire</div>
+<div class="dimensions">223.52 x 218.44 cm (88 x 86 in.)</div></div></li></ul></div>
+          <div class="button">
+              <div class="loader">
+                  <svg viewBox="25 25 50 50">
+                      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10"></circle>
+                  </svg>
+              </div>
+              <a role="button" href="#" class="focustrap-focusable focustrap-item" tabindex="0">Send enquiry</a>
+          </div>
+      </form>
+  </div>
+</div>
