@@ -1485,13 +1485,50 @@ section {
       width: 1170px;
    }
  }
- input[type="text"] {
+ /* input[type="text"] {
 
-  border:none; /* Get rid of the browser's styling */
-  border-bottom:1px solid #fff; /* Add your own border */
+  border:none; 
+  border-bottom:1px solid #fff;
+} */
 
+.field {
+  margin-bottom: 10%;
+  background-color: transparent;
+ /*  display:inline-block; */
+  
 }
- .text-line {
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #ffff;
+}
+
+.field input {
+  display: block;
+  min-width: 100%;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: transparent;
+  outline:none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #eeeeee 1px;
+  color: #eeeeee;
+}
+
+[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  /* background-color: #fff; */
+  color: #000;
+  border-radius: 0.5em;
+  align-items: center;
+}
+ /* .text-line {
   background-color: transparent;
   display:inline-block;
   color: #eeeeee;
@@ -1506,12 +1543,12 @@ section {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.5; */
   /* background-clip: padding-box; */
   /* border: 1px solid #ced4da; */
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
   /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
-}
+/* } */
 /* .form-control {
   display: block;
   
@@ -1528,7 +1565,7 @@ section {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 } */
 
-.text-line::-webkit-input-placeholder {
+.field::-webkit-input-placeholder {
   color: white;
 }
 
