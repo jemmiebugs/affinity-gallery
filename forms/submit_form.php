@@ -10,7 +10,7 @@ if(isset($_POST['contactFrmSubmit']) && !empty($_POST['name']) && !empty($_POST[
     /*
      * Send email to admin
      */
-    $to     = 'oyindamolamuritala@gmail.com';
+    $to     = 'contact@galleryaffinity.com';
     $subject= 'Enquiry Request Submitted';
     
     $htmlContent = '
