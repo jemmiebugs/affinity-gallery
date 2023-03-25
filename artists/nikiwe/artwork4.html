@@ -152,33 +152,53 @@
          <span aria-hidden="true">&times;</span>
        </button>
      </div>
+     <!-- <form action="forms/enquire.php" method="post" role="form" class="php-email-form">
      <div class="modal-body mx-3">
        <div class="md-form mb-5">
-         <i class="fas fa-user prefix grey-text"></i>
+         <i class="fas fa-user prefix grey-text"></i> -->
          <!-- <label data-error="wrong" data-success="right" for="form34" style="color: #f2f2f2;">Your name</label> -->
-         <input type="text" id="form34" class=" validate text-line" placeholder="Your Name" data-error="wrong" data-success="right" for="form34"> 
-       </div>
+         <!-- <input type="text" id="form34" class=" validate text-line" placeholder="Your Name" data-error="wrong" data-success="right" for="form34"> 
+       </div> -->
 
-       <div class="md-form mb-5">
-         <i class="fas fa-envelope prefix grey-text"></i>
+       <!-- <div class="md-form mb-5">
+         <i class="fas fa-envelope prefix grey-text"></i> -->
          <!-- <label data-error="wrong" data-success="right" for="form29" style="color: #f2f2f2;">Your email</label> -->
-         <input type="email" id="form29" class=" validate text-line" placeholder="Your Email" data-error="wrong" data-success="right" for="form29">
-        </div>
-
+         <!-- <input type="email" id="form29" class=" validate text-line" placeholder="Your Email" data-error="wrong" data-success="right" for="form29">
+        </div> -->
+<!-- 
        <div class="md-form mb-5">
-         <i class="fas fa-tag prefix grey-text"></i>
+         <i class="fas fa-tag prefix grey-text"></i> -->
          <!-- <label data-error="wrong" data-success="right" for="form32" style="color: #f2f2f2;">Phone Number</label> -->
-         <input type="text" id="form32" class="validate text-line " placeholder="Phone Number" data-error="wrong" data-success="right" for="form32" style="text-transform: #f2f2f2;">
-        </div>
+         <!-- <input type="text" id="form32" class="validate text-line " placeholder="Phone Number" data-error="wrong" data-success="right" for="form32" style="text-transform: #f2f2f2;">
+        </div> -->
 
-       <div class="md-form">
-         <i class="fas fa-pencil prefix grey-text"></i>
+       <!-- <div class="md-form">
+         <i class="fas fa-pencil prefix grey-text"></i> -->
          <!-- <label data-error="wrong" data-success="right" for="form8" style="color: #f2f2f2;">Message</label> -->
-         <textarea type="text" id="form8" class="md-textarea text-line" placeholder="Message" data-error="wrong" data-success="right" for="form8"></textarea>
-       </div>
-       <div class="row justify-content-start">
+         <!-- <textarea type="text" id="form8" class="md-textarea text-line" placeholder="Message" data-error="wrong" data-success="right" for="form8"></textarea>
+       </div> -->
+       
+       <form id="form">
+        <div class="field" style="color: #fff; margin-top: 10%;">
+           <!--  <label for="to_name">to_name</label> -->
+            <input type="text" name="to_name" id="to_name" placeholder="Your Name" style="color: #fff">
+          </div>
+          <div class="field">
+           <!--  <label for="user_email">user_email</label> -->
+            <input type="text" name="user_email" id="user_email" placeholder="Email Address">
+          </div>
+          <div class="field">
+            <!-- <label for="contact_number">contact_number</label> -->
+            <input type="text" name="contact_number" id="contact_number" placeholder="Phone Number">
+          </div>
+          <div class="field">
+           <!--  <label for="message">message</label> -->
+            <input type="text" name="message" id="message" placeholder="Message">
+          </div>
+          
+          <div class="field row justify-content-start">
         <div class="col-4">
-          <img src="artwork/1c.jpg" alt="avatar" class="square img-responsive">
+          <img src="artwork/D.jpg" alt="avatar" width="100%" height="100%" class="square img-responsive">
         </div>
         <div class="col-md-8">
         <p style="color: white;">Nikiwe Nikiwe Dlova<br>
@@ -187,17 +207,17 @@
         95 x 64cm</p>
         </div>
       </div>
-     <!-- <div class="col-md-6 row">
-      <div class="md-form mb-3 me-4 thumbnail">
-        <img src="artwork/1c.jpg" alt="avatar" class="square img-responsive">
-        <div class="mb-3 me-4 thumbnail">Kelechi Chiwendu<br>
-        Omolara, 2021<br>
-        Mixed media (oil, acrylic, charcoal, prints on watercolour paper and text)<br>
-        61. x 86.5 cm</div>
-      </div>
-    </div> -->
-     <div class="modal-footer d-flex justify-content-center" style="margin-top: 10%;">
-       <button class="btn btn-unique" style="background-color: #f2f2f2;">Send Enquiry</button>
+      <div class="modal-footer d-flex justify-content-center" style="margin-top: 10%;">
+        <input type="submit" id="button" value="Send Enquiry" ></div>
+    </form>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('nj6hyNlpFlDGm7q2t')
+    </script>
+     <!-- <div class="modal-footer d-flex justify-content-center" style="margin-top: 10%;">
+      <input type="submit" id="button" value="Send Enquiry" > -->
+       <!-- <button class="btn btn-unique submitBtn" style="background-color: #f2f2f2;" onclick="submitContactForm()">Send Enquiry</button> -->
      </div>
    </div>
  </div>
@@ -205,7 +225,7 @@
  <script>
    const myModalAlternative = new bootstrap.Modal('#myModal', options)
    </script>
-
+  
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
@@ -230,10 +250,10 @@
         <div class="col-md-6">
           <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
             <div style="margin-right: 13%;">follow us on</div>
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/GalleryAffinity" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/GalleryAffinity?_rdc=1&_rdr" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/galleryaffinity/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F37194981%2F" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
 
         </div>
@@ -258,6 +278,7 @@
 
 <!-- Template Main JS File -->
 <script src="/assets/js/main.js"></script>
+<script src="/forms/enquiry.js"></script>
 
 </body>
 
